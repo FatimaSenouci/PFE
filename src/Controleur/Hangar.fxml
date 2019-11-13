@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root3" prefHeight="520.0" prefWidth="750.0" style="-fx-background-color: #49FFBD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.HangarController">
+    <stylesheets>
+        <URL value="@hangar.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="158.0" layoutY="50.0" prefHeight="43.0" prefWidth="435.0" style="-fx-border-color: #860606;">
+         <children>
+            <Label layoutX="10.0" layoutY="9.0" prefHeight="30.0" prefWidth="258.0" text="Is The Plane In Hangar ?">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="Hyes" checkedColor="#860606" layoutX="354.0" layoutY="13.0" onAction="#checkEvent" text="Yes" textFill="#1c1e1d" unCheckedColor="#860606">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="Hno" checkedColor="#860606" layoutX="284.0" layoutY="12.0" onAction="#checkEvent" text="No" unCheckedColor="#860606">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </AnchorPane>
+      <Label layoutX="160.0" layoutY="173.0" prefHeight="48.0" prefWidth="435.0" style="-fx-background-color: #c9e1e2; -fx-border-color: #860606; -fx-border-radius: 500;" text="All Information of This Flight" textFill="#830707">
+         <font>
+            <Font name="Arial Italic" size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="158.0" layoutY="100.0" prefHeight="43.0" prefWidth="435.0" style="-fx-border-color: #860606;">
+         <children>
+            <Label layoutX="8.0" layoutY="5.0" prefHeight="30.0" prefWidth="258.0" text="Is The Control technecien is Done ?">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="Cyes" checkedColor="#860606" layoutX="360.0" layoutY="8.0" onAction="#checkEvent2" prefHeight="24.0" prefWidth="67.0" text="Yes" unCheckedColor="#860606">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="Cno" checkedColor="#860606" layoutX="287.0" layoutY="7.0" onAction="#checkEvent2" text="No" unCheckedColor="#860606">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="578.0" layoutY="391.0" onAction="#SaveData" prefHeight="50.0" prefWidth="123.0" style="-fx-border-color: #860606; -fx-border-radius: 500;" text="Save" textFill="#860606">
+         <font>
+            <Font name="Lucida Fax Demibold" size="25.0" />
+         </font>
+      </JFXButton>
+      <GridPane layoutX="203.0" layoutY="231.0" prefHeight="191.0" prefWidth="363.0" style="-fx-border-color: #860606;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="198.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="122.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="37.0" prefWidth="198.0" text=" Date                   :">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="31.0" prefWidth="199.0" text=" Flight Number       :" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="31.0" prefWidth="199.0" text=" Plane Number       :" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="200.0" text=" Occupied The Pist  :" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="199.0" text=" Type of Flight      :" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="199.0" text=" Is It In Hangar     :" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="198.0" text=" Is a Control T done !" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate3" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFN" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPN" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTid" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblType" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHangar" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblControl" prefHeight="35.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="PLANE" layoutX="102.0" layoutY="107.0" size="22" wrappingWidth="17.285715103149414" />
+      <FontAwesomeIconView fill="#860606" glyphName="PLANE" layoutX="608.0" layoutY="107.0" size="22" wrappingWidth="17.285715103149414" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLANE" layoutX="625.0" layoutY="79.0" size="22" wrappingWidth="17.285715103149414" />
+      <FontAwesomeIconView fill="#860606" glyphName="PLANE" layoutX="120.0" layoutY="79.0" size="22" wrappingWidth="17.285715103149414" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="idPanStrip2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@strip2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="strip2.Strip2Controller">
+   <children>
+      <VBox layoutX="3.0" layoutY="61.0" prefHeight="279.0" prefWidth="776.0" style="-fx-background-color: #f8f568;">
+         <children>
+            <HBox fillHeight="false" minWidth="0.0" prefHeight="79.0" prefWidth="681.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox prefHeight="87.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField fx:id="id1" focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField fx:id="id3" focusColor="BLACK" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField fx:id="id5" focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField fx:id="id2" focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField fx:id="id4" focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="87.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField fx:id="id610" focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" prefHeight="37.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="90.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" prefHeight="33.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" prefHeight="33.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" prefHeight="30.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="87.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="85.0" prefWidth="70.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                        <JFXTextField focusColor="BLACK" prefHeight="31.0" prefWidth="68.0" style="-fx-border-color: #000000;" unFocusColor="BLACK" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="85.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="658.0" spacing="20.0" style="-fx-border-color: #000000;">
+               <children>
+                  <FontAwesomeIconView glyphName="PRINT" size="15">
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 600; -fx-background-color: #000000;" text="Print" textFill="#fffb00">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIconView glyphName="SPINNER" size="15">
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 600; -fx-background-color: #000000;" text="Save" textFill="#fffb00">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="350.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets right="85.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="60.0" top="50.0" />
+         </padding>
+      </VBox>
+      <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" layoutX="14.0" layoutY="35.0" onMouseClicked="#Gostrip2" size="25" />
+   </children>
+</AnchorPane>

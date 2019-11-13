@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane4" prefHeight="557.0" prefWidth="787.0" style="-fx-border-color: #000000; -fx-background-color: #d6e4d1;" styleClass="mainFxmlClass" stylesheets="@avion.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrateur.AvionController">
+   <children>
+      <AnchorPane layoutX="70.0" layoutY="151.0" opacity="0.83" prefHeight="237.0" prefWidth="306.0" style="-fx-border-color: #000000; -fx-background-color: #d6e4d1;">
+         <children>
+            <Label layoutX="5.0" layoutY="34.0" prefHeight="25.0" prefWidth="88.0" text="  idavion :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="122.0" prefHeight="36.0" prefWidth="95.0" text=" capacité :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <JFXTextField fx:id="idavion" focusColor="WHITE" layoutX="105.0" layoutY="34.0" prefHeight="25.0" prefWidth="168.0" unFocusColor="WHITE" />
+            <JFXTextField fx:id="idcapacité" focusColor="WHITE" layoutX="105.0" layoutY="127.0" prefHeight="25.0" prefWidth="168.0" unFocusColor="#fffafa" />
+            <Label layoutX="5.0" layoutY="84.0" prefHeight="25.0" prefWidth="88.0" text="nom_avion :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="idNom_avion" focusColor="WHITE" layoutX="105.0" layoutY="84.0" prefHeight="25.0" prefWidth="168.0" unFocusColor="WHITE" />
+            <Button layoutX="127.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnSupAvion" prefHeight="36.0" prefWidth="78.0" style="-fx-background-radius: 200; -fx-background-color: #baddb0;" text="Suprimer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnModifierAvion" prefHeight="36.0" prefWidth="78.0" style="-fx-background-radius: 200; -fx-background-color: #baddb0;" text="modifier">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="216.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnInsertAvion" prefHeight="36.0" prefWidth="66.0" style="-fx-background-radius: 200; -fx-background-color: #baddb0;" text="inserer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#80ff7c" glyphName="ARROW_CIRCLE_LEFT" layoutX="14.0" layoutY="35.0" onMouseClicked="#retour4" size="25" />
+      <TableView fx:id="idTable" layoutX="408.0" layoutY="116.0" opacity="0.88" prefHeight="287.0" prefWidth="365.0" style="-fx-background-color: #d6e4d1; -fx-border-color: #000000;">
+        <columns>
+          <TableColumn fx:id="idavionT" prefWidth="133.0" style="-fx-background-color: #d6e4d1; -fx-border-color: #000000;" text="idavion" />
+          <TableColumn fx:id="idNom_avionT" prefWidth="103.0" style="-fx-background-color: #d6e4d1; -fx-border-color: #000000;" text="nom_avion" />
+            <TableColumn fx:id="idCapacitéT" prefWidth="167.0" style="-fx-background-color: #d6e4d1; -fx-border-color: #000000;" text="capacité" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

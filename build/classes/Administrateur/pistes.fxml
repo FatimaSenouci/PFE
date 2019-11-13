@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane2" prefHeight="560.0" prefWidth="870.0" style="-fx-border-color: #000000; -fx-background-color: #f4e7f4;" styleClass="mainFxmlClass" stylesheets="@piste.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrateur.PistesController">
+   <children>
+      <AnchorPane layoutX="88.0" layoutY="115.0" prefHeight="287.0" prefWidth="306.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label layoutY="57.0" prefHeight="25.0" prefWidth="95.0" text="  idpiste :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutY="104.0" prefHeight="25.0" prefWidth="95.0" text=" type :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutY="150.0" prefHeight="25.0" prefWidth="95.0" text=" nombre :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="idPiste" layoutX="97.0" layoutY="57.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField fx:id="idType" layoutX="94.0" layoutY="104.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField fx:id="idNombre" layoutX="94.0" layoutY="144.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button layoutX="195.0" layoutY="210.0" mnemonicParsing="false" onAction="#OnInsertPiste" prefHeight="42.0" prefWidth="77.0" style="-fx-background-radius: 200; -fx-background-color: #d6c4d4;" text="inserer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button layoutX="106.0" layoutY="210.0" mnemonicParsing="false" onAction="#OnModifierPiste" prefHeight="42.0" prefWidth="77.0" style="-fx-background-radius: 200; -fx-background-color: #d6c4d4;" text="modifier">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="210.0" mnemonicParsing="false" onAction="#OnDeletePiste" prefHeight="42.0" prefWidth="77.0" style="-fx-background-radius: 200; -fx-background-color: #d6c4d4;" text="suprimer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="idTable" layoutX="413.0" layoutY="115.0" opacity="0.56" prefHeight="287.0" prefWidth="330.0" style="-fx-border-color: #000000;">
+        <columns>
+          <TableColumn fx:id="idpisteT" prefWidth="125.0" style="-fx-border-color: #000000;" text="idpiste" />
+          <TableColumn fx:id="typeT" prefWidth="100.0" style="-fx-border-color: #000000;" text="type" />
+            <TableColumn fx:id="nombreT" prefWidth="104.0" style="-fx-border-color: #000000;" text="nombre" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#ffb2ed" glyphName="ARROW_CIRCLE_LEFT" layoutX="14.0" layoutY="40.0" onMouseClicked="#retour2" size="30" />
+   </children>
+</AnchorPane>

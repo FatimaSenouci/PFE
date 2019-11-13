@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="700.0" style="-fx-background-color: #FFF;" styleClass="mainFxmlClass" stylesheets="@control.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+   <children>
+      <MenuBar layoutX="190.0" layoutY="-2.0" prefHeight="35.0" prefWidth="514.0" style="-fx-background-color: #CDD7EF;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="pere" layoutX="200.0" layoutY="29.0" prefHeight="560.0" prefWidth="506.0">
+         <children>
+            <AnchorPane fx:id="tracks" layoutX="-3.0" prefHeight="560.0" prefWidth="506.0" style="-fx-background-color: #CDD7EF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="139.0" layoutY="29.0" text="Flight Plan" textFill="#5b1705">
+                     <font>
+                        <Font name="Arial Black" size="39.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="liftoff" prefHeight="560.0" prefWidth="499.0" style="-fx-background-color: #D9EFF5;">
+               <children>
+                  <JFXTextArea layoutX="14.0" layoutY="254.0" prefHeight="231.0" prefWidth="464.0" style="-fx-background-color: E5F4C5;" />
+                  <Label layoutX="236.0" layoutY="52.0" text="Label" />
+                  <JFXComboBox layoutX="108.0" layoutY="163.0" prefHeight="35.0" prefWidth="106.0" />
+                  <JFXButton layoutX="281.0" layoutY="173.0" text="Go" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="theflights" layoutX="-6.0" layoutY="-1.0" prefHeight="560.0" prefWidth="506.0" style="-fx-background-color: #fff;">
+               <children>
+                  <TableView fx:id="tableViewF" layoutX="1.0" layoutY="210.0" prefHeight="280.0" prefWidth="506.0" style="-fx-background-color: #F8E6E0;">
+                    <columns>
+                      <TableColumn fx:id="DateT" prefWidth="111.0" text="Date" />
+                      <TableColumn fx:id="FlightT" prefWidth="98.0" text="Flighte Number" />
+                        <TableColumn fx:id="PlaneT" prefWidth="88.0" text="Plane Number" />
+                        <TableColumn fx:id="PisteT" prefWidth="92.0" text="Occupied Piste" />
+                        <TableColumn fx:id="HT" minWidth="6.0" prefWidth="61.0" text="Hangar" />
+                        <TableColumn fx:id="CT" prefWidth="55.0" text="Control" />
+                    </columns>
+                  </TableView>
+                  <AnchorPane layoutX="47.0" layoutY="53.0" prefHeight="106.0" prefWidth="415.0" style="-fx-background-color: #F8E6E0;">
+                     <children>
+                        <JFXTextField fx:id="SearchField" focusColor="#eb7805" labelFloat="true" layoutX="79.0" layoutY="24.0" onKeyReleased="#SearchField" prefHeight="43.0" prefWidth="257.0" promptText="      Enter The Date      : " style="-fx-background-color: #fff;" unFocusColor="#eb6a2d">
+                           <font>
+                              <Font name="Bell MT Bold" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="control" layoutX="-12.0" prefHeight="560.0" prefWidth="506.0" style="-fx-background-color: #EFFBFF;" />
+            <AnchorPane fx:id="landing" layoutX="-3.0" layoutY="-1.0" prefHeight="560.0" prefWidth="506.0" styleClass="mainFxmlClass" stylesheets="@control.css">
+               <children>
+                  <Label layoutX="80.0" layoutY="40.0" prefHeight="58.0" prefWidth="312.0" text="Control Tower" textFill="#7f1500">
+                     <font>
+                        <Font name="Arial Black" size="39.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="25.0" layoutY="169.0" prefHeight="243.0" prefWidth="457.0" style="-fx-background-color: #FFFF; -fx-background-color: #CDD7EF; -fx-border-color: #7f1500;">
+                     <children>
+                        <JFXTextField fx:id="flightn" focusColor="#7f1500" labelFloat="true" layoutX="97.0" layoutY="37.0" promptText="       Flight Number" unFocusColor="#7f1500">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="plann" focusColor="#7f1500" labelFloat="true" layoutX="97.0" layoutY="112.0" promptText="       Plane Number" unFocusColor="#7f1500">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+                  <JFXDatePicker fx:id="dp" defaultColor="#8f2200" layoutX="25.0" layoutY="107.0" onMouseClicked="#getDate" prefHeight="35.0" prefWidth="202.0" promptText="Selecte The Date " />
+                  <JFXButton layoutX="392.0" layoutY="432.0" onAction="#handleButtonAction2" onMouseClicked="#go1" prefHeight="51.0" prefWidth="72.0" style="-fx-border-color: #931900; -fx-border-radius: 4000;" styleClass="btn-login" text="Go" textFill="#931900">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="27.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="lblDate" layoutX="253.0" layoutY="113.0" opacity="0.41" prefHeight="35.0" prefWidth="202.0" textFill="#908282" />
+                  <JFXButton layoutX="299.0" layoutY="432.0" onAction="#Confirm" prefHeight="51.0" prefWidth="72.0" style="-fx-border-color: #931900; -fx-border-radius: 4000;" text="Next" textFill="#931900">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-3.0" prefHeight="588.0" prefWidth="201.0" style="-fx-background-color: #CDD7EF;" stylesheets="@control.css">
+         <children>
+            <JFXButton fx:id="btn_landing" layoutX="7.0" layoutY="105.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="194.0" style="-fx-border-color: #7f1500; -fx-background-color: #CDD7EF; -fx-border-radius: 400;" text="Landing" textFill="#a42000">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_liftoff" layoutX="7.0" layoutY="177.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="194.0" style="-fx-border-color: #7f1500; -fx-background-color: #CDD7EF; -fx-border-radius: 4000;" text="Lift-off" textFill="#a42000">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_theflights" layoutX="7.0" layoutY="252.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="194.0" style="-fx-border-color: #7f1500; -fx-background-color: #CDD7EF; -fx-border-radius: 400;" text=" The flights" textFill="#751601">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_tracks" layoutX="7.0" layoutY="326.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="194.0" style="-fx-border-color: #7f1500; -fx-background-color: #CDD7EF; -fx-border-radius: 400;" text="Flight Plan" textFill="#a42000">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_control" layoutX="7.0" layoutY="404.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="194.0" style="-fx-border-color: #7f1500; -fx-background-color: #CDD7EF; -fx-border-radius: 400;" text="Control" textFill="#a42000">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bnt_all" layoutY="39.0" onAction="#handleButtonAction" prefHeight="52.0" prefWidth="202.0" style="-fx-border-color: #7f1500; -fx-border-radius: 4000; -fx-background-color: #CDD7EF;" text=" All Processors" textFill="#a42000">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="#a42000" glyphName="WP_COG" layoutX="7.0" layoutY="78.0" size="30" text="" wrappingWidth="27.99999960511923" />
+            <FontAwesomeIconView fill="#7f1500" glyphName="PLANE" layoutX="21.0" layoutY="139.0" size="25" />
+            <FontAwesomeIconView fill="#7f1500" glyphName="PLANE" layoutX="25.0" layoutY="211.0" size="25" />
+            <FontAwesomeIconView fill="#7f1500" glyphName="ROAD" layoutX="17.0" layoutY="286.0" size="25" />
+            <FontAwesomeIconView fill="#751601" glyphName="STICKY_NOTE" layoutX="20.0" layoutY="360.0" size="24" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

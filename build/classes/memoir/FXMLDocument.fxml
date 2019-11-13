@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" cache="true" prefHeight="541.0" prefWidth="467.0" style="-fx-border-color: #000000; -fx-background-color: #3F042B;" styleClass="mainFxmlClass" stylesheets="@memoir.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoir.FXMLDocumentController">
+    <children>
+      <AnchorPane layoutX="28.0" layoutY="33.0" prefHeight="475.0" prefWidth="422.0" style="-fx-border-color: #3f042b;">
+         <children>
+            <JFXTextField fx:id="idUsername" focusColor="#3f042b" layoutX="30.0" layoutY="273.0" prefHeight="29.0" prefWidth="352.0" promptText=" Username" unFocusColor="#400e2f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXTextField>
+            <JFXButton layoutX="304.0" layoutY="412.0" onAction="#OnLogin" prefHeight="49.0" prefWidth="78.0" style="-fx-background-radius: 300; -fx-background-color: #3f042b;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="comboUser" cache="true" focusColor="#400e2f" labelFloat="true" layoutX="34.0" layoutY="374.0" prefHeight="25.0" prefWidth="261.0" promptText="User Type" style="-jfx-focus-color: #400e2f; -jfx-unfocus-color: #400e2f;" unFocusColor="#400e2f">
+               <effect>
+                  <DropShadow color="#ebbbdb" height="136.4" radius="58.1225" width="98.09">
+                     <input>
+                        <Reflection />
+                     </input>
+                  </DropShadow>
+               </effect></JFXComboBox>
+            <Label layoutX="30.0" layoutY="170.0" prefHeight="68.0" prefWidth="352.0" style="-fx-border-color: #400e2f;" text="                      You can Login To your Account&#10;                by Type Your  Username and password" textFill="#400e2f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="idPassword" focusColor="#400e2f" layoutX="30.0" layoutY="324.0" prefHeight="25.0" prefWidth="352.0" promptText="Password" unFocusColor="#400e2f">
+               <effect>
+                  <Reflection />
+               </effect></JFXPasswordField>
+            <FontAwesomeIconView fill="#54063a" glyphName="PLANE" layoutX="43.0" layoutY="200.0" size="20" text="" textAlignment="CENTER" wrappingWidth="38.00000327825546" />
+            <FontAwesomeIconView fill="#54063a" glyphName="PLANE" layoutX="335.0" layoutY="200.0" size="20" text="" textAlignment="CENTER" wrappingWidth="38.00000327825546" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane6" prefHeight="557.0" prefWidth="787.0" style="-fx-border-color: #000000; -fx-background-color: #f4e6c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrateur.LigneController">
+   <children>
+      <AnchorPane layoutX="46.0" layoutY="115.0" prefHeight="287.0" prefWidth="348.0" style="-fx-background-color: #f4e6c9; -fx-border-color: #000000;">
+         <children>
+            <Label layoutX="8.0" layoutY="70.0" prefHeight="25.0" prefWidth="121.0" text="Num_vol :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="105.0" prefHeight="36.0" prefWidth="128.0" text="Aeroport d_arrivée:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="4.0" layoutY="145.0" prefHeight="36.0" prefWidth="128.0" text="Aeroport de depart:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="144.0" layoutY="70.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="144.0" layoutY="110.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="144.0" layoutY="150.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button layoutX="238.0" layoutY="209.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="66.0" style="-fx-background-radius: 200; -fx-background-color: #e7bf9c;" text="inserer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="413.0" layoutY="115.0" opacity="0.63" prefHeight="287.0" prefWidth="366.0" style="-fx-background-color: #f4e6c9; -fx-border-color: #000000;">
+        <columns>
+          <TableColumn prefWidth="125.0" style="-fx-background-color: #f4e6c9; -fx-border-color: #000000;" text="Num_vol" />
+          <TableColumn prefWidth="120.0" style="-fx-background-color: #f4e6c9; -fx-border-color: #000000;" text="Aeroport d_arrivée" />
+            <TableColumn prefWidth="117.0" style="-fx-background-color: #f4e6c9; -fx-border-color: #000000;" text="Aeroport de depart" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" layoutX="14.0" layoutY="35.0" onMouseClicked="#retour6" size="25" />
+   </children>
+</AnchorPane>

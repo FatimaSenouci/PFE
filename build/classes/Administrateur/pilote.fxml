@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane3" prefHeight="557.0" prefWidth="829.0" style="-fx-border-color: #000000; -fx-background-color: #e9eab2;" styleClass="mainFxmlClass" stylesheets="@pilote.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrateur.PiloteController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="83.0" opacity="0.72" prefHeight="351.0" prefWidth="275.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;">
+         <children>
+            <Label layoutX="5.0" layoutY="45.0" prefHeight="36.0" prefWidth="95.0" text="  idpilote :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="82.0" prefHeight="36.0" prefWidth="95.0" text=" nom :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="117.0" prefHeight="36.0" prefWidth="95.0" text="prenom:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="94.0" layoutY="82.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="94.0" layoutY="117.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="94.0" layoutY="157.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button layoutX="183.0" layoutY="276.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="72.0" style="-fx-background-radius: 200; -fx-background-color: #ff9670;" text="inserer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutY="157.0" prefHeight="36.0" prefWidth="95.0" text="  ddn:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutY="198.0" prefHeight="25.0" prefWidth="95.0" text="  telephone :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutY="234.0" prefHeight="25.0" prefWidth="95.0" text=" nationalité :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="94.0" layoutY="186.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="94.0" layoutY="223.0" prefHeight="25.0" prefWidth="168.0" />
+            <JFXTextField layoutX="94.0" layoutY="45.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button layoutX="97.0" layoutY="276.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="79.0" style="-fx-background-radius: 200; -fx-background-color: #ff9670;" text="suprimer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="276.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="72.0" style="-fx-background-radius: 200; -fx-background-color: #ff9670;" text="modifier">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="295.0" layoutY="115.0" opacity="0.67" prefHeight="287.0" prefWidth="530.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;">
+         <columns>
+            <TableColumn prefWidth="81.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="idpilote" />
+            <TableColumn prefWidth="95.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="nom" />
+            <TableColumn prefWidth="83.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="prenom" />
+            <TableColumn prefWidth="86.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="ddn" />
+            <TableColumn prefWidth="89.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="telephone" />
+            <TableColumn prefWidth="94.0" style="-fx-background-color: #ffe9eb; -fx-border-color: #000000;" text="nationalité" />
+         </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#ee5825" glyphName="ARROW_CIRCLE_LEFT" layoutX="14.0" layoutY="29.0" onMouseClicked="#retour3" size="25" />
+   </children>
+</AnchorPane>

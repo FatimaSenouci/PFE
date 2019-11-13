@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorMessage" prefHeight="556.0" prefWidth="805.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IAT.IATController">
+    <stylesheets>
+        <URL value="@iat.css" />
+    </stylesheets>
+   <children>
+      <FontAwesomeIconView fill="#ff9000" glyphName="ARROW_CIRCLE_LEFT" layoutX="5.0" layoutY="21.0" onMouseClicked="#retourMessage" size="20" />
+      <BorderPane layoutX="32.0" prefHeight="556.0" prefWidth="773.0" style="-fx-border-color: #ff9000;">
+         <top>
+            <MenuBar style="-fx-border-color: #ff9000;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Message">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Configuration">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Window">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <JFXButton fx:id="sendButton" onAction="#sendMessage" prefHeight="43.0" prefWidth="84.0" style="-fx-border-radius: 400; -fx-border-color: #ff9000;" text="Send" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXButton>
+         </bottom>
+         <center>
+            <JFXTextField fx:id="messageTextField" prefHeight="51.0" prefWidth="471.0" promptText="type your message here" style="-jfx-focus-color: #ff9000;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" left="150.0" right="150.0" top="200.0" />
+               </BorderPane.margin></JFXTextField>
+         </center>
+      </BorderPane>
+      <MenuBar layoutX="32.0" layoutY="24.0" prefHeight="28.0" prefWidth="773.0" style="-fx-border-color: #ff9000;">
+         <menus>
+            <Menu mnemonicParsing="false">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="ENVELOPE" size="14" />
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="FLOPPY_ALT" size="14" />
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PRINT" size="14" />
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <Menu mnemonicParsing="false" text="Window">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+               </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="14" />
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unspecified Menu">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="SS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="DD">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="FF">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="GG">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="KK">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="CH">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="??">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="ALL">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unspecified Menu">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="IRN">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

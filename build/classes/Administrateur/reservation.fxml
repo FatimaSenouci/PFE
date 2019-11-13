@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="765.0" style="-fx-background-color: #ffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.ByerController">
+    <stylesheets>
+        <URL value="@byer.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="19.0" layoutY="77.0" prefHeight="360.0" prefWidth="728.0" style="-fx-background-color: #102F3A;">
+         <children>
+            <VBox layoutX="398.0" layoutY="55.0" prefHeight="236.0" prefWidth="309.0">
+               <children>
+                  <Label text=" Prenom" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Bprenom" focusColor="#dfeb00" prefHeight="22.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Etat" textFill="#e8dede">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="ComboEtat" prefHeight="25.0" prefWidth="331.0" style="-fx-background-color: #fff;" />
+                  <Label text="Nombre de valise " textFill="#e8dede">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="NbValise" focusColor="#dfeb00" prefHeight="25.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Ville d arrivé" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Vdarrive" focusColor="#dfeb00" prefHeight="22.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Retour le" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="DateR" prefHeight="26.0" prefWidth="308.0" style="-fx-background-color: #FFF;" />
+               </children>
+            </VBox>
+            <VBox layoutX="20.0" layoutY="55.0" prefHeight="236.0" prefWidth="331.0">
+               <children>
+                  <Label text=" Nom" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Bnom" focusColor="#dfeb00" prefHeight="25.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Num de Passport" textFill="#e8dede">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Bpassport" focusColor="#dfeb00" prefHeight="25.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Voyageurs-Class" textFill="#e8dede">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="ComboClass" prefHeight="25.0" prefWidth="331.0" style="-fx-background-color: #fff;" />
+                  <Label text="Ville de départ" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Vdepart" focusColor="#dfeb00" prefHeight="25.0" prefWidth="238.0" style="-fx-background-color: #fff;" unFocusColor="#252424">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text=" Départ le" textFill="#e7dddd">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="DateD" prefHeight="25.0" prefWidth="332.0" style="-fx-background-color: #FFF;" />
+               </children>
+            </VBox>
+            <HBox layoutX="15.0" layoutY="14.0" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: #568EA3;">
+               <children>
+                  <JFXButton defaultButton="true" prefHeight="25.0" prefWidth="127.0" ripplerFill="#03eed7" text="Aller/Retour" textFill="#f2f2f2" />
+                  <JFXButton prefHeight="25.0" prefWidth="138.0" ripplerFill="#00f5dc" text="Aller Simple" textFill="#f2f2f2">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="13.0" layoutY="291.0" prefHeight="53.0" prefWidth="688.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="92.0" text="Payer par:" textFill="#ebe3e3">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="Espace" onAction="#CheckEvent3" text="espace" textFill="#f87800">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="CB" onAction="#CheckEvent3" text="CB" textFill="#f87800">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="Visa" onAction="#CheckEvent3" text="Visa" textFill="#f87800">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="Check" onAction="#CheckEvent3" text="check" textFill="#f87800">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <Label fx:id="typepayer" prefHeight="23.0" prefWidth="61.0" style="-fx-background-color: #fff;">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Code" focusColor="#f5a801" prefHeight="25.0" prefWidth="193.0" promptText="enter le code" style="-fx-background-color: #fff;" unFocusColor="#f79b07">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="13.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </AnchorPane>
+      <Label layoutX="192.0" layoutY="39.0" prefHeight="25.0" prefWidth="515.0" text="ENNA Campany: Find your trip  by our flight offers" textFill="#000000c9">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="308.0" layoutY="459.0" onAction="#BtnReserver" prefHeight="36.0" prefWidth="193.0" style="-fx-background-color: #f87800;" text="Réserver" textFill="#f5f5f5">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="554.0" layoutY="459.0" onAction="#BtnImprimer" prefHeight="36.0" prefWidth="193.0" style="-fx-background-color: #f87800;" text="Imprimer" textFill="#f5f5f5">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
